@@ -1,0 +1,25 @@
+@use './variables.scss'as *;
+
+@mixin mobibe-body-copy {
+    font-size: $mobile-body-copy-text;
+    line-height: $mobile-body-copy-text-line-height;
+    font-weight: $mobile-body-copy-text-weight;
+}
+
+@mixin borderStyling {
+    border: 1px solid $brainFlix-murcury-secondary;
+    border-radius: 6px;
+}
+
+
+@mixin tabletWidth {
+    @media only screen and (min-width:768px) {
+        @content;
+    }
+}
+
+@mixin desktopWidth {
+    @media only screen and (min-width:1280px) {
+        @content;
+    }
+}

@@ -10,6 +10,7 @@ function Header() {
           <nav className="header__nav">
               <img src={logo} alt="logo" className='header__nav-logo' />
               <MenuIcon className='header__nav-icon' />
+              <MenuIcon className='header__nav-icon' />
           </nav>
     </div>
   )

@@ -1,7 +1,33 @@
 // @use '../../Styles/partials/variables.scss'as *;
-// @use '../../Styles/partials/mixins.scss'as *;
-@use '../../Styles/partials/global.scss'as *;
+@use "../../Styles/partials/mixins.scss" as *;
+@use "../../Styles/partials/global.scss" as *;
 
-.logo {
-    height: 200px;
+.header {
+  background-color: #c27777;
+  padding: 1em;
+  display: flex;
+  justify-content: end;
+
+  &__nav {
+    background-color: #d19f9f;
+    display: flex;
+    width: 53%;
+    justify-content: space-between;
+    // @include tabletWidth {
+    //   justify-content: space-between;
+    // }
+    @include laptopWidth {
+      display: none;
+    }
+
+    &-logo {
+      width: 50px;
+    }
+
+    &-icon {
+      width: 50px;
+      height: 50px;
+      color: red;
+    }
+  }
 }

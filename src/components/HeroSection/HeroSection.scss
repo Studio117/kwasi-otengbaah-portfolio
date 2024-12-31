@@ -1,0 +1,10 @@
+// @use '../../Styles/partials/variables.scss'as *;
+// @use '../../Styles/partials/mixins.scss'as *;
+@use '../../Styles/partials/global.scss'as *;
+
+.nav__socials-github-dark,
+.nav__socials-instagram-dark,
+.nav__socials-linkedin-dark
+ {
+    color: red;
+}

@@ -1,3 +1,4 @@
+@use "../src/Styles/partials/global.scss" as *;
 @use "../src/Styles/partials/variables.scss" as *;
 @use "../src/Styles/partials/mixins.scss" as *;
 
@@ -37,13 +38,4 @@ body {
   gap: 3em;
   //   justify-content: center;
   //   height: 100vh;
-}
-
-h1,
-h2,
-h3,
-p {
-  color: var(--text-color);
-  margin: 0;
-  padding: 0;
 }

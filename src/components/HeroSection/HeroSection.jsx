@@ -48,7 +48,7 @@ function HeroSection() {
 
       </div>
       <span>
-        <p>I love creating and buiding beautiful things, i love solving problems, and I love coding - so I build beautiful things to solve problem</p>
+        <p>I love creating and buiding beautiful things, I love solving problems, and I love coding - so I build beautiful things to solve problem</p>
         <a href={CV} download={CV}><button >Download CV</button></a>
 
       </span>

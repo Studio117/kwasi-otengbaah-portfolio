@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+
+#styling note
+- changed the styling around a little bit to accommodate the use of globals variable - see the variables file

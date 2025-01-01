@@ -1,7 +1,49 @@
-// #root {
-//   max-width: 1920px;
-//   margin: 0 auto;
-//   padding: 2rem;
-//   text-align: center;
-// }
+@use "../src/Styles/partials/variables.scss" as *;
+@use "../src/Styles/partials/mixins.scss" as *;
 
+:root {
+  --background-color: #{$background-color};
+  --background-color: #{$background-color};
+  --btn-color: #{$btn-color};
+  --btn-text-color: #{$btn-color};
+  --project-card-bg: #{$project-card-bg};
+  --text-color: #{$text-color};
+  --form-text-color: #{$form-text-color};
+  --footer-text-color: #{$footer-text-color};
+}
+[data-theme="dark"] {
+  --background-color: #{$background-color-dark};
+  --btn-color: #{$btn-color-dark};
+  --btn-text-color: #{$btn-color-dark};
+  --project-card-bg: #{$project-card-bg-dark};
+  --text-color: #{$text-color-dark};
+  --form-text-color: #{$form-text-color-dark};
+  --footer-text-color: #{$footer-text-color-dark};
+}
+
+body {
+  background-color: var(--background-color);
+  margin: 0 auto 3em;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+#root {
+  min-width: 320;
+  max-width: 1920px;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  //   justify-content: center;
+  //   height: 100vh;
+}
+
+h1,
+h2,
+h3,
+p {
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}

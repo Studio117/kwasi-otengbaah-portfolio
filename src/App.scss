@@ -6,7 +6,7 @@
   --background-color: #{$background-color};
   --background-color: #{$background-color};
   --btn-color: #{$btn-color};
-  --btn-text-color: #{$btn-color};
+  --btn-text-color: #{$btn-text-color};
   --project-card-bg: #{$project-card-bg};
   --text-color: #{$text-color};
   --form-text-color: #{$form-text-color};
@@ -15,7 +15,7 @@
 [data-theme="dark"] {
   --background-color: #{$background-color-dark};
   --btn-color: #{$btn-color-dark};
-  --btn-text-color: #{$btn-color-dark};
+  --btn-text-color: #{$btn-text-color-dark};
   --project-card-bg: #{$project-card-bg-dark};
   --text-color: #{$text-color-dark};
   --form-text-color: #{$form-text-color-dark};

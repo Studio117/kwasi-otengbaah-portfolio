@@ -1,15 +1,81 @@
 // @use '../../Styles/partials/variables.scss'as *;
 // @use '../../Styles/partials/mixins.scss'as *;
-@use '../../Styles/partials/global.scss'as *;
+@use "../../Styles/partials/global.scss" as *;
 
 .hero {
-    padding: 0 1em;
-}
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25em;
+  text-align: center;
+  padding: 0 1em;
+  height: 100dvh;
+  min-height: 500px;
 
-.nav__socials-github-dark,
-.nav__socials-instagram-dark,
-.nav__socials-linkedin-dark
- {
-    color: red;
-}
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25em;
+    text-align: center;
+  }
 
+  &__image {
+    width: 200px;
+  }
+
+  &__image-theme {
+    position: relative;
+  }
+
+  &__theme-icon {
+    width: 25px;
+    position: absolute;
+    top: 5px;
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    gap: 1.5em;
+
+    a {
+      width: fit-content;
+    }
+  }
+
+  &__github-icon {
+    max-height: 35px;
+  }
+
+  &__linkedin-icon,
+  &__x-twitter-icon {
+    height: 30px;
+  }
+
+  &__cv-btn {
+    background-color: var(--btn-color);
+    color: var(--btn-text-color);
+    padding: 1em 1.25em;
+    font-size: 1.25rem;
+    border: none;
+    border-radius: 1.25em;
+    font-weight: bold;
+    box-shadow: 0 4px 4ppx rgba(0, 0, 0, 0.25);
+    transition: box-shadw 200ms ease-in-out, tansform 200ms ease-in-out;
+  }
+
+  &__cv-btn:hover {
+    transform: scale(1.05);
+  }
+
+  &__cv-btn:active {
+    transform: translateY(2px);
+  }
+
+  &__description {
+    max-height: 24ch;
+  }
+}

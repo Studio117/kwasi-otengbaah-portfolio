@@ -29,29 +29,35 @@ function HeroSection() {
 
   return (
     <section className='hero'>
-      <img src={heroImage} alt="profile picture of Kwasi Oteng-Baah" className="hero__image" />
+      <div className="hero__image-theme">
+        <img src={heroImage} alt="profile picture of Kwasi Oteng-Baah" className="hero__image" />
 
-      <img src={themeIcon} onClick={toggleTheme} />
+        <img src={themeIcon} onClick={toggleTheme} className='hero__theme-icon'/>
+      </div>
 
-      <h1 className="nav__my-name">Kwasi <br /> Oteng-Baah</h1>
-      <h2 className="nav__info">FullStack Developer</h2>
-      <div className="nav__socials">
-        <a href="https://github.com/Studio117" className="nav__socials-github"><img src={githubThemeIcon} alt="github icon and link" /></a>
+      <div className="hero__info">
+        <h1 className="hero__name">Kwasi <br /> Oteng-Baah</h1>
+        <h2 className="hero__profession">FullStack Developer</h2>
+        
+        <div className="hero__socials">
+          {/* <div className="hero__name-profession"></div> */}
+          <a href="https://github.com/Studio117" target="_blank" className="hero__socials-github"><img src={githubThemeIcon} alt="github icon and link" className="hero__github-icon"/></a>
 
+          <a href="https://www.linkedin.com/in/kwasi-otengbaah" target="_blank" className="hero__socials-linkedin"><img src={linkedThemeIcon} alt="github icon and link" className="hero__linkedin-icon"/></a>
 
-        <a href="https://www.linkedin.com/in/kwasi-otengbaah" className="nav__socials-linkedin"><img src={linkedThemeIcon} alt="github icon and link" /></a>
+          {/* <a href="https://www.instagram.com/kwasiob" className="hero__socials-instagram"><img src={instagramThemeIcon} alt="instagram icon and link" className="hero__instagram-icon"/></a> */}
 
+          <a href="https://x.com/akwasiob" target="_blank" className="hero__socials-instagram"><img src={xThemeIcon} alt="x-twittr icon and link" className="hero__x-twitter-icon"/></a>
 
-        {/* <a href="https://www.instagram.com/kwasiob" className="nav__socials-instagram"><img src={instagramThemeIcon} alt="github icon and link" /></a> */}
-
-        <a href="https://www.instagram.com/kwasiob"  className="nav__socials-instagram"><img src={xThemeIcon} alt="github icon and link" /></a>
+        </div>
+        <p className='hero__description'>I love creating and buiding beautiful things, I love solving problems, and I love coding - so I build beautiful things to solve problem</p>
+        <p>recent grad(oct.2024), so still working on portfolio stuff</p>
+          <a href={CV} download={CV}>
+            <button className='hero__cv-btn' >Download CV</button>
+          </a>
 
       </div>
-      <span>
-        <p>I love creating and buiding beautiful things, I love solving problems, and I love coding - so I build beautiful things to solve problem</p>
-        <a href={CV} download={CV}><button >Download CV</button></a>
 
-      </span>
 
     </section>
   )

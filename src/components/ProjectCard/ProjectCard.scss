@@ -1,0 +1,27 @@
+@use '../../Styles/partials/variables.scss'as *;
+@use "../../Styles/partials/mixins.scss" as *;
+@use "../../Styles/partials/global.scss" as *;
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75em;
+
+    img {
+        max-width: 250px;
+        align-self: center;
+        background-color: var(--project-card-bg);
+        border-radius: 1.25em;
+    }
+
+    a {
+        width: fit-content;
+        text-decoration: none;
+        color: var(--btn-text-color);
+        transition: transform 200ms ease-in-out;
+    }
+    a:hover {
+        transform: scale(1.05);
+    }
+}

@@ -51,7 +51,6 @@ function HeroSection() {
 
         </div>
         <p className='hero__description'>I love creating and buiding beautiful things, I love solving problems, and I love coding - so I build beautiful things to solve problem</p>
-        <p>recent grad(oct.2024), so still working on portfolio stuff</p>
           <a href={CV} download={CV}>
             <button className='hero__cv-btn' >Download CV</button>
           </a>

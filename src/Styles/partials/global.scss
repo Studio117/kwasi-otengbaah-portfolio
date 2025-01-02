@@ -1,24 +1,12 @@
-// @font-face {
-//     font-family: avenir next, sans-serif;
-//     src: url(https://fonts.googleapis.com/);
-//     font-weight: 400;
-// }
 
-// @font-face {
-//     font-family: avenir next, sans-serif;
-//     src: url(../../assets/font/AvenirNextLTPro-Demi.otf);
-//     font-weight: 600;
-// }
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-
 a {
-    text-decoration: none;
-
+  text-decoration: none;
 }
 
 h1,
@@ -30,8 +18,10 @@ p {
   padding: 0;
 }
 
-h2, h3, p {
-    font-family: 'Roboto Mono', monospace;
+h2,
+h3,
+p {
+  font-family: "Roboto Mono", monospace;
 }
 
 h1,
@@ -39,19 +29,29 @@ h2 {
   text-transform: uppercase;
 }
 
-h2, h3 {
-    font-size: 1.5rem;
+h2,
+h3 {
+  font-size: 1.5rem;
 }
 
 h1 {
-    font-family: 'Rubik', sans-serif;
-    font-size: 2rem;
+  font-family: "Rubik", sans-serif;
+  font-size: 2rem;
 }
 
-.sectionTitle {
-    margin-bottom: 1.75em;
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
 }
+
+// .sectionTitle {
+//   margin-bottom: 1.75em;
+// }
 
 .hover {
-    cursor: pointer;
+  cursor: pointer;
 }

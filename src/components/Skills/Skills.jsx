@@ -1,43 +1,65 @@
+import SkillsList from '../SkillsList/SkillsList'
+import checkMark from '../../assets/images/checkmark-dark.svg'
+import './Skills.scss'
 
-// Backend:
-// Node.js
-// MySQL
-// Knex.js
-// Express
-// MongoDB
-
-// Frontend:
-// HTML
-// CSS
-// JavaScript
-// Canva
-// Bootstrap
-// Sass
-// React
-
-// Design & Collaboration Tools:
-// Figma – A design tool for UI/UX design.
-// GitHub – A platform for version control and collaborative development.
-// Jira – A project management and issue tracking tool.
 
 import React from 'react'
 
 function Skills() {
-  return (
-      <section className='skill'>
-                      <h1 className="sectionTitle">Projects</h1>
+    return (
+        <section className='skills'>
+            <h1 className="sectionTitle">Skills</h1>
+            <div className="skills__category">
+                <h2 className='skills__category-heading'>Frontend</h2>
+                <div className="skills__category-set">
+                    <SkillsList src={checkMark} skill="HTML" />
+                    <SkillsList src={checkMark} skill="CSS" />
+                    <SkillsList src={checkMark} skill="JavaScript" />
+                    <SkillsList src={checkMark} skill="Canva" />
+                    <SkillsList src={checkMark} skill="Bootstrap" />
+                    <SkillsList src={checkMark} skill="Sass" />
+                    <SkillsList src={checkMark} skill="React" />
+                </div>
 
-<p className='projects__side-note'>recent grad as of oct.2024, so still working on portfolio stuff 😁</p>
+            </div>
+            <hr />
+            <div className="skills__category">
+                <h2 className='skills__category-heading'>Backend</h2>
+                <div className="skills__category-set">
+                    <SkillsList src={checkMark} skill="Node.js" />
+                    <SkillsList src={checkMark} skill="MySQL" />
+                    <SkillsList src={checkMark} skill="Knex" />
+                    <SkillsList src={checkMark} skill="Express" />
+                    <SkillsList src={checkMark} skill="MongoDB" />
+                </div>
 
-<div className="projects__container">
-    <ProjectCard src={viberr} href="https://github.com/Studio117" h3="Viberr" p=" Streaming App" />
+            </div>
+            <hr />
+            <div className="skills__category">
+                <h2 className='skills__category-heading'>Design & Collaboration Tools</h2>
+                <div className="skills__category-set">
+                    <SkillsList src={checkMark} skill="Figma" />
+                    <SkillsList src={checkMark} skill="Github" />
+                    <SkillsList src={checkMark} skill="Jira" />
+                </div>
 
-    <ProjectCard src={burger} href="https://github.com/Studio117" h3="Burger Bar" p=" Streaming App" />
+            </div>
+            <hr />
+            <div className="skills__category">
+                <h2 className='skills__category-heading'>Content Management & Website Builders</h2>
+                <div className="skills__category-set">
+                    <SkillsList src={checkMark} skill="Wordpress" />
+                    <SkillsList src={checkMark} skill="Webflow" />
+                    <SkillsList src={checkMark} skill="Weebly" />
+                    <SkillsList src={checkMark} skill="Squarespace" />
+                    <SkillsList src={checkMark} skill="Wix" />
+                </div>
 
-    <ProjectCard src={glasses} href="https://github.com/Studio117" h3="Glasses shop" p=" Streaming App" />
-</div>
-    </section>
-  )
+            </div>
+            <hr />
+
+        </section>
+    )
 }
 
 export default Skills

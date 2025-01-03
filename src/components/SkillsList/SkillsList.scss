@@ -1,0 +1,13 @@
+.skillsList {
+    text-align: center;
+
+    &__item {
+      display: flex;
+    align-items: center;
+    gap: 0.4em;  
+    }
+    
+    img {
+    width: 20px;
+}
+}

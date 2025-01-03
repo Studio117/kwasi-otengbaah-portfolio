@@ -1,4 +1,5 @@
 import './App.scss'
+import ContactPage from './components/ContactPage/ContactPage'
 import Header from './components/Header/Header'
 import HeroSection from './components/HeroSection/HeroSection'
 import Projects from './components/Projects/Projects'
@@ -12,6 +13,7 @@ function App() {
       <HeroSection />
       <Projects />
       <Skills />
+      <ContactPage />
     </>
   )
 }

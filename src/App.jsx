@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <HeroSection />
       <Projects />
       <Skills />
@@ -21,3 +21,4 @@ function App() {
 }
 
 export default App
+ 

@@ -7,8 +7,9 @@ import React from 'react'
 
 function Skills() {
     return (
-        <section className='skills'>
-            <h1 className="sectionTitle">Skills</h1>
+        <section id='skills'>
+            <div className="skills">
+                <h1 className="sectionTitle">Skills</h1>
             <div className="skills__category">
                 <h2 className='skills__category-heading'>Frontend</h2>
                 <div className="skills__category-set">
@@ -57,6 +58,8 @@ function Skills() {
 
             </div>
             <hr />
+            </div>
+            
 
         </section>
     )

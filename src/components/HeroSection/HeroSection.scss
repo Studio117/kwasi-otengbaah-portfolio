@@ -1,6 +1,6 @@
 // @use '../../Styles/partials/variables.scss'as *;
-// @use '../../Styles/partials/mixins.scss'as *;
-@use "../../Styles/partials/global.scss" as *;
+@use "../../Styles/partials/mixins.scss"as *;
+@use "../../Styles/partials/global.scss"as *;
 
 .hero {
   height: 100dvh;
@@ -9,8 +9,13 @@
   align-items: center;
   justify-content: center;
   gap: 2em;
-  padding: 0 1em 0;
+  padding: 3em 1em 0;
   min-height: 500px;
+  max-width: 1280px;
+
+  @include tabletWidth {
+    padding: 3em 3em 0;
+  }
 
   &__info {
     display: flex;
@@ -58,7 +63,7 @@
   &__cv-btn {
     background-color: var(--btn-color);
     color: var(--btn-text-color);
-    margin-top: 1.5em;
+    // margin-top: 1.5em;
     padding: 1em 1.25em;
     font-size: 1.25rem;
     border: none;

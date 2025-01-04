@@ -3,7 +3,12 @@
 @use "../../Styles/partials/global.scss"as *;
 
 .footer {
-    padding: 2em 0;
+    // background-image: linear-gradient(rgb(182, 49, 49));
+    padding: 2em 0 0;
+    text-align: center;
+    width: 100vw;
+    margin-bottom: 0;
+    border-top: 1px solid rgba(73, 73, 73, 0.682);
     
     p {
         font-size: 1.125rem;

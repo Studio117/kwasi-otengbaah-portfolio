@@ -30,13 +30,14 @@ function HeroSection() {
   return (
     <section className=''>
       <div className="hero">
-        <div className="hero__image-theme">
+        <div className="hero__content-wrapper">
+                  <div className="hero__image-theme">
           <img src={heroImage} alt="profile picture of Kwasi Oteng-Baah" className="hero__image" />
 
           <img src={themeIcon} onClick={toggleTheme} className='hero__theme-icon' />
-        </div>
-
-        <div className="hero__info">
+          </div>
+          
+                  <div className="hero__info">
           <h1 className="hero__name">Kwasi <br /> Oteng-Baah</h1>
           <h2 className="hero__profession">FullStack Developer</h2>
 
@@ -59,6 +60,10 @@ function HeroSection() {
           </a>
 
         </div>
+        </div>
+
+
+
       </div>
 
 

@@ -1,24 +1,35 @@
+@use "../../Styles/partials/variables.scss"as *;
+@use "../../Styles/partials/mixins.scss"as *;
+@use "../../Styles/partials/global.scss"as *;
+
+
 .skills {
-  //    height: 100dvh;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1em;
   justify-content: start;
-  padding-top: 5em;
+  padding-top: 3em;
   min-height: 500px;
   padding-bottom: 3em;
+
+  @include tabletWidth {
+    padding-top: 5em;
+  }
 
   &__category {
     display: flex;
     flex-direction: column;
-    width: 60%;
-    margin-top: 1.5em;
+    align-items: center;
+    width: 80%;
+    // margin-top: 1.5em;
   }
 
   &__category-heading {
+    background-color: green;
     font-size: 1.25rem;
     margin-bottom: 1em;
+    // width: 100%;    text-align: center;
   }
 
   &__category-set {
@@ -34,5 +45,11 @@
     height: 1px;
     border: none;
     background-color: var(--text-color);
+
+    @include tabletWidth {
+      width: 200px;
+      margin-bottom: 1em;
+
+    }
   }
 }

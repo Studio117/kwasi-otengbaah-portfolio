@@ -12,9 +12,11 @@
   margin-top: 2em;
   padding: 2em 1em 2em;
   min-height: 500px;
+  border-bottom: 1px solid rgba(73, 73, 73, 0.682);
+
 
   @include tabletWidth {
-    padding-top: 3em;
+    padding: 3em 2em 4em;
 
   }
 
@@ -37,9 +39,6 @@
     width: 80%;
     max-width: 600px;
     color: rgb(107, 106, 106);
-
-    @include tabletWidth {
-      text-align: center;
-    }
+    text-align: center;
   }
 }

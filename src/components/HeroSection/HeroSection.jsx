@@ -2,13 +2,14 @@ import React from 'react'
 import "./HeroSection.scss";
 import Header from '../Header/Header';
 import heroImage from '../../assets/images/hero-img.png';
+import portAvatar from '../../assets/images/port-avatar.png';
 import GitHubIcon from '../../assets/images/github-light.svg';
 import GitHubIconDark from '../../assets/images/github-dark.svg';
 import LinkedInIcon from '../../assets/images/linkedin-light.svg';
 import LinkedInIconDark from '../../assets/images/linkedin-dark.svg';
 // import InstagramIcon from '../../assets/images/instagram-light.svg';
 // import InstagramIconDark from '../../assets/images/instagram-light.svg';
-import CV from '../../assets/images/cv.pdf'
+import CV from '../../assets/images/Kwasi_tCV2_2025.pdf'
 import { useTheme } from '../../commonfiles/ThemeContext';
 import moonIcon from '../../assets/images/moon.svg'
 import sunIcon from '../../assets/images/sun.svg'
@@ -32,7 +33,8 @@ function HeroSection() {
       <div className="hero">
         <div className="hero__content-wrapper">
                   <div className="hero__image-theme">
-          <img src={heroImage} alt="profile picture of Kwasi Oteng-Baah" className="hero__image" />
+          <img src={portAvatar} alt="profile picture of Kwasi Oteng-Baah" className="hero__image" />
+          {/* <img src={heroImage} alt="profile picture of Kwasi Oteng-Baah" className="hero__image" /> */}
 
           <img src={themeIcon} onClick={toggleTheme} className='hero__theme-icon' />
           </div>
@@ -42,7 +44,6 @@ function HeroSection() {
           <h2 className="hero__profession">FullStack Developer</h2>
 
           <div className="hero__socials">
-            {/* <div className="hero__name-profession"></div> */}
             <a href="https://github.com/Studio117" target="_blank" className="hero__socials-github"><img src={githubThemeIcon} alt="github icon and link" className="hero__github-icon" /></a>
 
             <a href="https://www.linkedin.com/in/kwasi-otengbaah" target="_blank" className="hero__socials-linkedin"><img src={linkedThemeIcon} alt="github icon and link" className="hero__linkedin-icon" /></a>
@@ -53,7 +54,7 @@ function HeroSection() {
 
           </div>
           <p className='hero__description'>
-            I love creating and buiding beautiful things - I love solving problems - and I love coding - so I build beautiful things to solve problem
+            I love creating and building beautiful things - I love solving problems - and I love coding - so I build beautiful things to solve problem
           </p>
           <a href={CV} download={CV}>
             <button className='hero__cv-btn' >Download CV</button>

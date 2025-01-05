@@ -8,7 +8,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 0 2em;
+  border-bottom: 1px solid rgba(73, 73, 73, 0.682);
 
+
+  @include tabletWidth {
+    width: 90%;
+    margin: 0 auto;
+  }
 
 
   &__content-wrapper {
@@ -53,6 +60,7 @@
 
   &__image {
     width: 200px;
+    border-radius: 50%;
 
     @include tabletWidth {
       width: 20vw;

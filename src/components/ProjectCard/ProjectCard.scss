@@ -1,9 +1,11 @@
 @use '../../Styles/partials/variables.scss'as *;
-@use "../../Styles/partials/mixins.scss" as *;
-@use "../../Styles/partials/global.scss" as *;
+@use "../../Styles/partials/mixins.scss"as *;
+@use "../../Styles/partials/global.scss"as *;
 
 
 .container {
+    width: 30%;
+    min-width: 300px;
     display: flex;
     flex-direction: column;
     gap: 1.75em;
@@ -20,11 +22,13 @@
     }
 
     a {
-        width: fit-content;
+        // width: fit-content;
         text-decoration: none;
         color: var(--btn-text-color);
         transition: transform 200ms ease-in-out;
+        word-wrap: none;
     }
+
     a:hover {
         transform: scale(1.05);
     }

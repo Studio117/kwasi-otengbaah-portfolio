@@ -14,9 +14,7 @@
     display: flex;
     width: 55%;
     justify-content: space-between;
-    // @include tabletWidth {
-    //   justify-content: space-between;
-    // }
+
     @include laptopWidth {
       display: none;
     }

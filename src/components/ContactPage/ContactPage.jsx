@@ -6,7 +6,7 @@ function ContactPage() {
     return (
         <section id='contact-page'>
             <div className="contact-page">
-                <h1 className="sectionTitle">Contact</h1>
+                <h1 className="sectionTitle">Contact Page</h1>
 
                 <form action="https://formsubmit.co/kwasiob@gmail.com" method='post' className='contact-page__form' value="Portfolio ContactPage Submittion">
 

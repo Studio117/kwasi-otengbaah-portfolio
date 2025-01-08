@@ -1,11 +1,9 @@
 import './Projects.scss'
 import React from 'react'
-import viberr from '../../assets/images/viberr.png'
 import LLVS from '../../assets/images/2lvs-site-snapshot.png'
 import burger from '../../assets/images/fresh-burger.png'
 import glasses from '../../assets/images/hipsster.png'
 import ProjectCard from '../ProjectCard/ProjectCard'
-import ProjectCardIframe from '../ProjectCard/ProjectCardIframe'
 
 function Projects() {
     return (

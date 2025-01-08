@@ -25,6 +25,7 @@ function ContactPage() {
                         <textarea type="message" name='message' id='message' placeholder='Message' required ></textarea>
                     </div>
                     
+                    {/* <input type="hidden" name='_next' value="https://yourdomain.co/thanks.html" /> */}
 
                     <input type="submit" value='Submit' className='submit' />
                 </form>

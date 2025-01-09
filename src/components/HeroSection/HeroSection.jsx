@@ -29,7 +29,7 @@ function HeroSection() {
   const xThemeIcon = theme === 'light' ? xIconLight : xIconDark;
 
   return (
-    <section className=''>
+    <section id='hero'>
       <div className="hero">
         <div className="hero__content-wrapper">
                   <div className="hero__image-theme">

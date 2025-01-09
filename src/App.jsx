@@ -1,26 +1,25 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.scss'
-import ContactPage from './components/ContactPage/ContactPage'
-import Footer from './components/Footer/Footer'
 import Header from './components/Header/Header'
-import HeroSection from './components/HeroSection/HeroSection'
-import Projects from './components/Projects/Projects'
-import Skills from './components/Skills/Skills'
 import HomePage from './pages/HomePage/HomePage'
+import ThankYouPage from './pages/ThankYouPage/ThankYouPage'
+import 
 
 function App() {
 
   return (
     <>
-      {/* <Header /> */}
-      <HomePage />
-      {/* <HeroSection /> */}
-      {/* <Projects /> */}
-      {/* <Skills /> */}
-      {/* <ContactPage /> */}
-      {/* <Footer /> */}
+      <BrowserRouter>
+        {/* <Header /> */}
+
+        <Routes>
+          <Route path='/' element={<HomePage />}></Route>
+
+          <Route path='/thankYouPage' element={<ThankYouPage />}></Route>
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
 
 export default App
- 

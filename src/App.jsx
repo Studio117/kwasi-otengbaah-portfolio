@@ -3,7 +3,7 @@ import './App.scss'
 import Header from './components/Header/Header'
 import HomePage from './pages/HomePage/HomePage'
 import ThankYouPage from './pages/ThankYouPage/ThankYouPage'
-import 
+// import 
 
 function App() {
 

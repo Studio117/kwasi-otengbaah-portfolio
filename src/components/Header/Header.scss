@@ -1,32 +1,50 @@
-@use '../../Styles/partials/variables.scss'as *;
+@use "../../Styles/partials/variables.scss" as *;
 @use "../../Styles/partials/mixins.scss" as *;
 @use "../../Styles/partials/global.scss" as *;
 
 .header {
-    background-color: $btn-color ;
-//   background-color: #c27777;
-  padding: 1em;
+  @include headerContainer;
+  // background-color: inherit;
+  background-color: #c27777;
+  // padding: 1.rem 1em 1em;
   display: flex;
   justify-content: end;
+  border-bottom: 1px solid var(--border-color);
+  position: fixed;
+  z-index: 11;
 
   &__nav {
-    background-color: #d19f9f;
+    // background-color: #7a7575;
     display: flex;
-    width: 55%;
+    width: 100%;
+    align-items: center;
     justify-content: space-between;
+    padding: 1em 0 0.5em;
 
     @include laptopWidth {
       display: none;
     }
-
+    &-logoXicon {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
     &-logo {
-      width: 50px;
+      width: 35px;
+      height: 22px;
+    }
+
+    &-name {
+      font-size: 1.125rem;
+      margin-left: 0.5rem;
+      color: white;
     }
 
     &-icon {
-      width: 50px;
-      height: 50px;
-      color: red;
+      font-size: 1.5rem;
+      // // width: 160px;
+      // height: 50px;
+      color: rgb(255, 255, 255);
     }
   }
 }

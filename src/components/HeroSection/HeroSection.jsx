@@ -1,7 +1,5 @@
 import React from 'react'
 import "./HeroSection.scss";
-import Header from '../Header/Header';
-import heroImage from '../../assets/images/hero-img.png';
 import portAvatar from '../../assets/images/port-avatar.png';
 import GitHubIcon from '../../assets/images/github-light.svg';
 import GitHubIconDark from '../../assets/images/github-dark.svg';
@@ -19,7 +17,7 @@ import xIconLight from '../../assets/images/twitter-light.svg'
 
 
 
-function HeroSection() {
+function HeroSection() { 
 
   const { theme, toggleTheme } = useTheme();
   const themeIcon = theme === 'light' ? sunIcon : moonIcon;
@@ -38,7 +36,7 @@ function HeroSection() {
 
           <img src={themeIcon} onClick={toggleTheme} className='hero__theme-icon' />
           </div>
-          
+        
                   <div className="hero__info">
           <h1 className="hero__name">Kwasi <br /> Oteng-Baah</h1>
           <h2 className="hero__profession">FullStack Developer</h2>

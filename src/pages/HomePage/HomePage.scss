@@ -1,0 +1,42 @@
+@use "../../Styles/partials/variables.scss" as *;
+@use "../../Styles/partials/mixins.scss" as *;
+@use "../../Styles/partials/global.scss" as *;
+
+:root {
+  --background-color: #{$background-color};
+  --background-color: #{$background-color};
+  --btn-color: #{$btn-color};
+  --btn-text-color: #{$btn-text-color};
+  --project-card-bg: #{$project-card-bg};
+  --text-color: #{$text-color};
+  --form-text-color: #{$form-text-color};
+  --footer-text-color: #{$footer-text-color};
+  --border-color: #{$border-color};
+  
+}
+[data-theme="dark"] {
+  --background-color: #{$background-color-dark};
+  --btn-color: #{$btn-color-dark};
+  --btn-text-color: #{$btn-text-color-dark};
+  --project-card-bg: #{$project-card-bg-dark};
+  --text-color: #{$text-color-dark};
+  --form-text-color: #{$form-text-color-dark};
+  --footer-text-color: #{$footer-text-color-dark};
+  --border-color: #{$border-color-dark};
+
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,31 +1,54 @@
-@use './variables.scss'as *;
+@use "./variables.scss" as *;
 
-@mixin mobibe-body-copy {
-    font-size: $mobile-body-copy-text;
-    line-height: $mobile-body-copy-text-line-height;
-    font-weight: $mobile-body-copy-text-weight;
+// Small Mobile Devices (max-width: 480px)
+@mixin xSmobileWidth {
+  @media (max-width: 480px) {
+    width: 100vw;
+    min-width: 320px;
+  }
 }
 
-@mixin borderStyling {
-    border: 1px solid $brainFlix-murcury-secondary;
-    border-radius: 6px;
+// Mobile Devices (481px - 768px)
+@mixin mobileWidth {
+  @media (min-width: 481px) {
+    @content;
+  }
 }
 
-
+// Tablet Devices (769px - 1024px)
 @mixin tabletWidth {
-    @media only screen and (min-width:768px) {
-        @content;
-    }
+  @media (min-width: 769px) {
+    @content;
+  }
 }
 
+// Laptop Devices (1025px - 1440px)
 @mixin laptopWidth {
-    @media only screen and (min-width:1024px) {
-        @content;
-    }
+  @media (min-width: 1025px) {
+    @content;
+  }
 }
 
+// Desktop Devices (1441px - 1920px)
 @mixin desktopWidth {
-    @media only screen and (min-width:1280px) {
-        @content;
-    }
+  @media (min-width: 1441px) {
+    @content;
+  }
+}
+
+@mixin headerContainer {
+  width: 100vw;
+  padding: 0 1rem;
+
+  @include tabletWidth {
+    padding: 0 2rem;
+  }
+
+  @include laptopWidth {
+    padding: 0 3rem;
+  }
+
+  @include desktopWidth {
+    padding: 0 4rem;
+  }
 }

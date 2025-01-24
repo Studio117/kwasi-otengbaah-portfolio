@@ -9,9 +9,7 @@
   align-items: center;
   gap: 1em;
   justify-content: start;
-  padding-top: 3em;
   min-height: 500px;
-  padding-bottom: 3em;
 
   @include tabletWidth {
     padding-top: 5em;

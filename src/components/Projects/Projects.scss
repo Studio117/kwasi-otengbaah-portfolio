@@ -9,11 +9,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  margin-top: 2em;
   padding-left: 1em ;
   padding-right: 1em ;
   min-height: 500px;
-  // border-bottom: 1px solid rgba(73, 73, 73, 0.682);
 
 
   @include tabletWidth {

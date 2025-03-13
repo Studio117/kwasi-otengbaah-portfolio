@@ -1,0 +1,79 @@
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+h2,
+h3,
+p {
+  font-family: "Roboto Mono", monospace;
+}
+
+h1,
+h2 {
+  text-transform: uppercase;
+}
+
+h2,
+h3 {
+  font-size: 1.5rem;
+}
+
+h1 {
+  font-family: "Rubik", sans-serif;
+  font-size: 2rem;
+}
+
+section {
+  padding: 3rem 0;
+  border-bottom: 1px solid rgba(73, 73, 73, 0.682);
+}
+@media (min-width: 769px) {
+  section {
+    padding: 4rem 0;
+  }
+}
+
+.sectionTitle {
+  margin-bottom: 1em;
+}
+
+.hover {
+  cursor: pointer;
+}
+
+.container {
+  width: 30%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75em;
+  border: 1px solid var(--border-color);
+  border-radius: 1em;
+  padding: 1em;
+  text-align: center;
+}
+.container img {
+  max-width: 250px;
+  align-self: center;
+  background-color: var(--project-card-bg);
+  border-radius: 1.25em;
+  margin-bottom: 0.51em;
+}
+.container a {
+  text-decoration: none;
+  color: var(--btn-text-color);
+  transition: transform 200ms ease-in-out;
+  word-wrap: none;
+}
+.container a:hover {
+  transform: scale(1.05);
+}/*# sourceMappingURL=ProjectCard.css.map */

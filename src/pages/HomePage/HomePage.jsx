@@ -11,10 +11,10 @@ function HomePage() {
   return (
       <div>
           <HeroSection />
-          <Projects />
-          <Skills />
-          <ContactPage />
-          <Footer />
+          {/* <Projects /> */}
+          {/* <Skills /> */}
+          {/* <ContactPage /> */}
+          {/* <Footer /> */}
     </div>
   )
 }

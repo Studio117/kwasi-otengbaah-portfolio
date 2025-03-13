@@ -3,62 +3,74 @@
 
 #hero {
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+    max-width: 1280px;
 
   .hero {
     background-color: aqua;
     width: 100%;
-    max-width: 1280px;
     display: flex;
     align-items: center;
     justify-content: center;
 
     &__content-wrapper {
+           width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 100%;
+ 
       gap: 2em;
-
+      padding-left: 0.5em;
+      padding-right: 0.5em;
+      
       @include tabletWidth {
+        width: 100%;
         flex-direction: row-reverse;
         justify-content: center;
         align-items: center;
-        gap: 0;
+        gap: 3em;
+        padding-left: 2em;
+        padding-right: 2em;
       }
 
       &-imageXtheme {
+        // background-color: red;
         display: flex;
-        width: 30%;
+        // justify-content: center;
+        // align-items: center;
         position: relative;
-
+        
+        @include tabletWidth {
+          width: 30%;
+          // max-width: 500px;
+        }
         &-image {
-          max-width: 200px;
+          width: 100%;
+          // width: 200px;
           border-radius: 50%;
 
           @include tabletWidth {
-            // width: 20vw;
             min-width: 150px;
-            max-width: 300px;
+            // max-width: 300px;
           }
         }
 
         &-icon {
           width: 25px;
           position: absolute;
-          top: 5px;
+          top: 0;
           right: -15px;
 
           @include tabletWidth {
             top: 0;
-            right: 5px;
+            right: 0;
           }
 
           @include laptopWidth {
             top: 0;
-            right: 4em;
+            right: 0;
           }
         }
       }
@@ -71,9 +83,10 @@
         gap: 1.25em;
         text-align: center;
 
-
         @include tabletWidth {
           width: 70%;
+          max-width: 700px;
+          // padding: 0 2em;
         }
 
         @include laptopWidth {
@@ -124,10 +137,10 @@
 
         &-description {
           max-height: 24ch;
-          margin: 0 2em 0;
+          // margin: 0 2em 0;
 
           @include tabletWidth {
-            margin: 0 2em 0;
+            // margin: 0 2em 0;
             max-width: 600px;
           }
         }

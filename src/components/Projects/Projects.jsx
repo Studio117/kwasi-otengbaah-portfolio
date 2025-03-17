@@ -11,7 +11,7 @@ function Projects() {
             <div className="projects">
                 <h1 className="sectionTitle">Projects</h1>
 
-                <p className='projects__side-note'>recent grad as of oct.2024, so still working on portfolio stuff 😁</p>
+                <p className='projects__side-note'>...uhm yeah, so the site is under some reworking right now... give me a few minutes, or a month? 😁</p>
                 <div className="projects__container">
                     
                     <ProjectCard src={LLVS} href="https://github.com/Studio117" h3="2LVS Fashion House" p="Fashion company" />

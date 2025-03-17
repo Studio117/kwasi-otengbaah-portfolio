@@ -14,7 +14,7 @@ function Projects() {
                 <p className='projects__side-note'>...uhm yeah, so the site is under some reworking right now... give me a few minutes, or a month? 😁</p>
                 <div className="projects__container">
                     
-                    <ProjectCard src={LLVS} href="https://github.com/Studio117" h3="2LVS Fashion House" p="Fashion company" />
+                    <ProjectCard src={LLVS} href="https://2lvs.com" h3="2LVS Fashion House" p="Fashion company" />
 
                     <ProjectCard src={burger} href="https://github.com/Studio117" h3="E-commerce" p="coming soon" />
 

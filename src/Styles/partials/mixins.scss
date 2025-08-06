@@ -8,16 +8,16 @@
   }
 }
 
-// Mobile Devices (481px - 768px)
+// Mobile Devices (481px - 767px)
 @mixin mobileWidth {
   @media (min-width: 481px) {
     @content;
   }
 }
 
-// Tablet Devices (769px - 1024px)
+// Tablet Devices (768px - 1024px)
 @mixin tabletWidth {
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     @content;
   }
 }
@@ -36,19 +36,19 @@
   }
 }
 
-@mixin headerContainer {
-  width: 100vw;
-  padding: 0 1rem;
+// @mixin headerContainer {
+//   // width: 100vw;
+//   padding: 0 1rem;
 
-  @include tabletWidth {
-    padding: 0 2rem;
-  }
+//   @include tabletWidth {
+//     padding: 0 2rem;
+//   }
 
-  @include laptopWidth {
-    padding: 0 3rem;
-  }
+//   @include laptopWidth {
+//     padding: 0 3rem;
+//   }
 
-  @include desktopWidth {
-    padding: 0 4rem;
-  } 
-}
+//   @include desktopWidth {
+//     padding: 0 4rem;
+//   } 
+// }

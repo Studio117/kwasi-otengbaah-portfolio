@@ -38,8 +38,11 @@ function HeroSection() {
           </div>
         
                   <div className="hero__info">
+                    <p>hi, my name is</p>
           <h1 className="hero__name">Kwasi <br /> Oteng-Baah</h1>
-          <h2 className="hero__profession">FullStack Developer</h2>
+          <h2 className="hero__profession"> I like building things to solve problems</h2>
+          {/* <h2 className="hero__profession">FullStack Developer</h2> */}
+          <p>I'm a FullStack Engineer / Web Developer, that likes to build apps that solve real world problems. my interests include Wed Development, DevOps, and Ai intergrations</p>
 
           <div className="hero__socials">
             <a href="https://github.com/Studio117" target="_blank" className="hero__socials-github"><img src={githubThemeIcon} alt="github icon and link" className="hero__github-icon" /></a>

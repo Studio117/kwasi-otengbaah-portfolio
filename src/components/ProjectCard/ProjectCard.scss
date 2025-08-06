@@ -1,35 +1,34 @@
-@use '../../Styles/partials/variables.scss'as *;
-@use "../../Styles/partials/mixins.scss"as *;
-@use "../../Styles/partials/global.scss"as *;
-
+@use "../../Styles/partials/variables.scss" as *;
+@use "../../Styles/partials/mixins.scss" as *;
+@use "../../Styles/partials/global.scss" as *;
 
 .container {
-    width: 30%;
-    min-width: 300px;
-    display: flex;
-    flex-direction: column;
-    gap: 1.75em;
-    border: 1px solid var(--border-color);
-    border-radius: 1em;
-    padding: 1em;
-    text-align: center;
+  width: 30%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75em;
+  border: 1px solid var(--border-color);
+  border-radius: 1em;
+  padding: 1em;
+  text-align: center;
 
-    img {
-        max-width: 250px;
-        align-self: center;
-        background-color: var(--project-card-bg);
-        border-radius: 1.25em;
-        margin-bottom: 0.51em;
-    }
+  a {
+    text-decoration: none;
+    color: var(--btn-text-color);
+    transition: transform 200ms ease-in-out;
+    word-wrap: none;
+  }
 
-    a {
-        text-decoration: none;
-        color: var(--btn-text-color);
-        transition: transform 200ms ease-in-out;
-        word-wrap: none;
-    }
+  img {
+    max-width: 250px;
+    align-self: center;
+    background-color: var(--project-card-bg);
+    border-radius: 1.25em;
+    margin-bottom: 0.51em;
+  }
 
-    a:hover {
-        transform: scale(1.05);
-    }
+  a:hover {
+    transform: scale(1.05);
+  }
 }

@@ -13,12 +13,12 @@ function Projects() {
 
                 <p className='projects__side-note'>...uhm yeah, so the site is under some reworking right now... give me a few minutes, or a month? 😁</p>
                 <div className="projects__container">
-                    
-                    <ProjectCard src={LLVS} href="https://2lvs.com" h3="2LVS Fashion House" p="Fashion company" />
 
-                    <ProjectCard src={burger} href="https://github.com/Studio117" h3="E-commerce" p="coming soon" />
+                    <ProjectCard src={LLVS} href="https://2lvs.com" h3="2LVS Fashion House" p="Fashion company" alt='2LVS website landing page snapshot' />
 
-                    <ProjectCard src={glasses} href="https://github.com/Studio117" h3="Some other app" p="coming soon" />
+                    <ProjectCard src={burger} href="https://github.com/Studio117" h3="E-commerce" p="coming soon" alt='coming soon' />
+
+                    <ProjectCard src={glasses} href="https://github.com/Studio117" h3="Some other app" p="coming soon" alt='comming soon' />
                 </div>
             </div>
 

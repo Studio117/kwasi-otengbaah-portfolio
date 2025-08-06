@@ -3,14 +3,15 @@
 @use "../../Styles/partials/global.scss" as *;
 
 .header {
-  @include headerContainer;
-  // background-color: inherit;
   background-color: #c27777;
-  // padding: 1.rem 1em 1em;
+  width: 100%;
+  padding: 1em;
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   border-bottom: 1px solid var(--border-color);
-  position: fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
   z-index: 11;
 
   &__nav {
@@ -19,32 +20,48 @@
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    padding: 1em 0 0.5em;
+    // padding: 1em 0 0.5em;
 
     @include laptopWidth {
       display: none;
     }
+
     &-logoXicon {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      gap: 1em;
     }
+
     &-logo {
       width: 35px;
       height: 22px;
     }
 
     &-name {
+      display: none;
+      display: flex;
       font-size: 1.125rem;
-      margin-left: 0.5rem;
+      margin: 0;
       color: white;
+
+      @include tabletWidth {
+        // display: flex;
+        font-size: 1.125rem;
+        margin: 0;
+        color: white;
+      }
     }
 
     &-icon {
-      font-size: 1.5rem;
+      font-size: 2rem;
       // // width: 160px;
       // height: 50px;
       color: rgb(255, 255, 255);
+
+      @include tabletWidth {
+        display: none;
+      }
     }
   }
 }
